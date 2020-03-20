@@ -1,0 +1,32 @@
+*The super Keyword*
+-- Super keyword is used to resolve the ambiguity between the variables and method names same in sub and super class 
+--It is also used to call the base class constructor
+--It is used in Inheritance 
+--When the constructor is called using super constructor the order of type of the actual and formal parameter should be same 
+--When the super keyword is used to call the base class constructor the statement must be the first line within the constructor.
+eg 
+class base
+{
+	int b;
+	base()
+	{
+	}
+	void show()
+	{
+		sop(b);
+	}
+}
+class derived
+{
+	int b;
+	derived()
+	{
+		super();
+	}
+	void show()
+	{
+		super.show
+		sop(super.b);
+		sop(b);
+	}
+}
